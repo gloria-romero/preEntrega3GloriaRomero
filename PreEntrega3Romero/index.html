@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda online de ropa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header-container">
+        <button id="go-to-cart-btn">Ir al carrito</button>
+        <span id="cart-count">0</span> productos
+    </div>
+    <div id="login-container">
+        <h2>Inicia sesión para acceder a la tienda de ropa online</h2>
+        <input type="text" id="username" placeholder="Nombre de usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button id="login-button">Iniciar sesión</button>
+        <p id="message-container"></p>
+    </div>
+    <div id="ecommerce-container" style="display:none;">
+        <h1>Tienda de ropa</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar producto...">
+        </div>
+        
+        <div class="products">
+            <div class="product">
+                <img src="img/camiseta_lisa.jpg" alt="Camiseta Básica">
+                <h2>Camiseta Básica</h2>
+                <p>Precio: 20€</p>
+                <button class="add-to-cart" data-producto-nombre="Camiseta Básica" data-producto-precio="20" data-producto-imagen="img/camiseta_lisa.jpg">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="img/camiseta_estampada.jpg" alt="Camiseta Estampada">
+                <h2>Camiseta Dibujo</h2>
+                <p>Precio: 25€</p>
+                <button class="add-to-cart" data-producto-nombre="Camiseta Dibujo" data-producto-precio="25" data-producto-imagen="img/camiseta_estampada.jpg">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="img/pantalones_cortos.jpg" alt="Pantalón Corto">
+                <h2>Pantalón Corto</h2>
+                <p>Precio: 30€</p>
+                <button class="add-to-cart" data-producto-nombre="Pantalón Corto" data-producto-precio="30" data-producto-imagen="img/pantalones_cortos.jpg">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="img/pantalones_largos.jpg" alt="Pantalón Largo">
+                <h2>Pantalón Largo</h2>
+                <p>Precio: 35€</p>
+                <button class="add-to-cart" data-producto-nombre="Pantalón Largo" data-producto-precio="35" data-producto-imagen="img/pantalones_largos.jpg">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    <div id="carrito-container" style="display:none;">
+        <h2>Tu carrito de compras</h2>
+        <div id="productos-carrito">
+        </div>
+        <p id="total-carrito"></p>
+        <button id="volver-tienda">Volver a la tienda</button>
+    </div>
+    <script src="login.js"></script>
+    <script src="carrito.js"></script>
+
+</body>
+</html>
